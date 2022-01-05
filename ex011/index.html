@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medias em HTML5</title>
+</head>
+<body>
+    
+    <h1>Imagens Dinâmicas</h1>
+    <p>Tente abrir esse site em vários dispositivos diferentes ou simplesmente aumente e diminua o tamanho do seu navegador.</p>
+    <Picture>
+        <source media="(max-width: 750px)" srcset="Imagens/foto-p.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="Imagens/foto-m.png" type="image/png">
+        <!--Configuração das imagens para diversoe dispositivos acima A ordem importa dos sources P ; M;  G-->
+        <img src="Imagens/foto-g.png" alt="Imagem flexível">
+    </Picture>
+    
+    
+    <h1>Reproduzindo Áudio</h1>
+    
+    <p>Vamos aprender a reproduzir áudio em HTML5</p>
+    
+    <audio src="media/08 Feitio_de_Paixao.mp3" controls autoplay></audio>
+    <!--Mp3 Wav  Ogg-->
+     
+    <audio preload="metadata" autoplay controls>
+        <source src="media/08 Feitio_de_Paixao.mp3" type="audio/mpeg">
+        <source src="media/08 Feitio_de_Paixao.mp3" type="audio/ogg">
+        <source src="media/08 Feitio_de_Paixao.mp3" type="audio/wav">
+        <!--Caso não consiga carregar nenhum destes formatos acima vai permitir o download abaixo-->
+        <p>Infelismente seu navegador não consegue reproduzir áudio. <a href="media/08 Feitio_de_Paixao.mp3">Clique aqui para baixar o arquivo MP3</a></p>
+     </audio>
+
+</body>
+</html>
